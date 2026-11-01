@@ -1,1 +1,354 @@
 # good-governance-website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Governance</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(
+        rgba(15,23,42,.8),
+        rgba(37,99,235,.8)
+    ),
+    url("https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 35px;
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+    transform:translateY(-2px);
+}
+
+/* Sections */
+
+section{
+    padding:90px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.section-text{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:50px;
+    color:#555;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+/* Statistics */
+
+.stats{
+    background:#1e3a8a;
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.stat{
+    padding:20px;
+}
+
+.stat h2{
+    font-size:3rem;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    max-width:700px;
+    margin:auto;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.7rem;
+}
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">🏛 Good Governance</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#principles">Principles</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Good Governance</h1>
+
+        <p>
+            Good governance ensures transparency, accountability,
+            participation, responsiveness, and the rule of law.
+            It helps create strong institutions and a prosperous society.
+        </p>
+
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Good Governance</h2>
+
+    <p class="section-text">
+        Good governance refers to the responsible management of public
+        affairs and resources. It promotes fairness, transparency,
+        accountability, and active citizen participation in decision-making.
+    </p>
+</section>
+
+<section id="principles">
+
+    <h2 class="section-title">Core Principles</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Transparency</h3>
+            <p>Government actions and decisions should be open and accessible.</p>
+        </div>
+
+        <div class="card">
+            <h3>Accountability</h3>
+            <p>Officials must be answerable for their actions and decisions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Participation</h3>
+            <p>Citizens should have opportunities to engage in governance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Rule of Law</h3>
+            <p>All individuals and institutions are subject to the law.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="benefits">
+
+    <h2 class="section-title">Benefits</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📈 Economic Growth</h3>
+            <p>Creates stability and attracts investment.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Social Justice</h3>
+            <p>Promotes equality and fairness for all citizens.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡 Reduced Corruption</h3>
+            <p>Encourages honest and transparent administration.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <h2 class="section-title" style="color:white;">Governance Impact</h2>
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <h2>100%</h2>
+            <p>Transparency Goal</p>
+        </div>
+
+        <div class="stat">
+            <h2>24/7</h2>
+            <p>Public Service Commitment</p>
+        </div>
+
+        <div class="stat">
+            <h2>∞</h2>
+            <p>Citizen Participation</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Get Involved</h2>
+
+    <p>
+        Citizens can strengthen governance by voting responsibly,
+        staying informed, participating in community activities,
+        and holding institutions accountable.
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Good Governance Initiative. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
